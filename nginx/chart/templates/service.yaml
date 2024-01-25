@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kyueksel-service
+  namespace: azure-arc-cce
+spec:
+  selector:
+    app.kubernetes.io/instance: kyueksel
+  type: ClusterIP
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 9000
