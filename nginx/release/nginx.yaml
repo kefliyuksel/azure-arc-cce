@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: azure-arc-cce-nginx
+  name: azure-arc-cce
   namespace: azure-arc-cce
   annotations:
     clusterconfig.azure.com/use-managed-source: "true"
